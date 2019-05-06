@@ -76,7 +76,7 @@ class FlaskPooledClusterRpcProxy(PooledClusterRpcProxy):
         self.configure(config)
 
         self._connect_on_method_call = config.get(
-            'NAMEKO_CONNECT_ON_METHOD_CALL',
+            'CONNECT_ON_METHOD_CALL',
             self._connect_on_method_call
         )
 
